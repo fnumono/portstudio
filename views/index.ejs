@@ -4,15 +4,34 @@
 <html lang="en">
 <head>
 	<style>
-		div.jumbotron{
-			background-image: url(< img src='header.jpg' >);
-			
+		div.jumbotron
+		{
+			background-image: url(header.jpg);
+			height: 500px;
+
+			color: white;
+			text-align: center;
 		}
+
+		div.divisions
+		{
+			text-align: center;
+		}
+
+		div.top
+		{
+			text-align: center;
+		}
+
+		div.rest
+		{
+			text-align: center;
+		}	
 
 	</style>
     <% include ./partials/head %>
 </head>
-<body class="container">
+<body>
 
     <header>
         <% include ./partials/header %>
@@ -20,81 +39,129 @@
 
     <main>
         <div class="jumbotron">
-            <h1 style="text-align:center;">Get more done with US</h1>
-            <p>Welcome to templating using EJS</p>
+        	<div class="header">
+            	<h1 style="text-align:center;">Get more done with</h1>
+            	<h3 style="color:orange;">Our Name</h3>
+            	<h2>Build your app right and fast</h2>
+        	</div>
         </div>
+
+        <br>
+        <br>
 
 
         <h1 style="text-align:center;"> Work with professional team for your projects </h1>
 
+        <br>
+        <br>
+
+        <div class="divisions">
+
         <div class="row">
         	<div class="col-md-offset-2 col-md-4">
         		
         		<div class="thumbnail">
-        			<img src="header.jpg">
-        			<div class="caption">
+        			<img src="web.png">
+        			
+        		</div>
+
+        		<div class="caption">
         				<h3> Website Development </h3>
         			</div>
-        		</div>
 
         	</div>
         	<div class=" col-md-4">
         		
         		<div class="thumbnail">
-        			<img src="header.jpg">
-        			<div class="caption">
+        			<img src="ios.jpg">
+        			
+        		</div>
+        		<div class="caption">
         				<h3> IOS App Development </h3>
         			</div>
-        		</div>
 
         	</div>
 
         </div>
+
+
 
 
         <div class="row">
         	<div class="col-md-offset-2 col-md-4">
         		
         		<div class="thumbnail">
-        			<img src="header.jpg">
-        			<div class="caption">
-        				<h3> UI/UX Design</h3>
-        			</div>
+        			<img src="ux.jpg">
+        			
         		</div>
+
+        		
 
         	</div>
-        	<div class=" col-md-4">
+        	<div class="col-md-4">
         		
         		<div class="thumbnail">
-        			<img src="header.jpg">
-        			<div class="caption">
-        				<h3> SEO service </h3>
-        			</div>
+        			<img src="seo.png">
+        			
         		</div>
 
+        		
         	</div>
 
         </div>
 
-        <h2> How it works </h2>
         <div class="row">
         	<div class="col-md-offset-2 col-md-4">
+        		<div class="caption">
+        			<h3> UI/UX Design</h3>
+        		</div>
+        	</div>
+        	<div class="col-md-4">
+        		<div class="caption">
+        			<h3> SEO service </h3>
+        		</div>
+        	</div>
+        </div>
+
+        <br>
+        <br>
+
+        <h1> How it works </h1>
+        <br>
+        <br>
+        <div class="row">
+        	<div class="col-md-4">
         		
         		<div class="thumbnail">
-        			<img src="header.jpg">
-        			<div class="caption">
-        				<h3> Website Development </h3>
-        			</div>
+        			<img src="post.png">        			
+        		</div>
+
+        		<div class="caption">
+        				<h3> Post </h3>
         		</div>
 
         	</div>
         	<div class=" col-md-4">
         		
         		<div class="thumbnail">
-        			<img src="header.jpg">
-        			<div class="caption">
-        				<h3> Website Development </h3>
-        			</div>
+        			<img src="work.jpg">
+        			
+        		</div>
+
+        		<div class="caption">
+        				<h3> Work </h3>
+        		</div>
+
+        	</div>
+
+        	<div class="col-md-4">
+        		<div class="thumbnail">
+        			<img src="pay.jpg">
+        			
+        		</div>
+
+        		<div class="caption">
+        				<h3>Pay</h3>
         		</div>
 
         	</div>
@@ -103,13 +170,24 @@
 
         </div>
 
-        <div class="jumbotron">
+        <br>
+        <br>
+
+    </div>
+
+        <div class="jumbotron" style="background-image:url(header2.jpg); height:700px;">
             <h1 style="text-align:center;">Build your MVP for a lot less</h1>
-            <p>~ Founder of ~</p>
+            <p>~ Founder of Name~</p>
         </div>
 
 
+        <div class="top">
+
+        <br>
+        <br>
         <h3> Top Portofolios </h3>
+        <br>
+        <br>
 
         <div class="row">
         	<div class="col-md-4">
@@ -197,10 +275,14 @@
 
         </div>
 
+    </div>
+
+    	<br>
+    	<br>
+    	<div class="rest">
         <h2> Rest of the Portofolio </h2>
-
-          <h3> Top Portofolios </h3>
-
+        <br>
+        <br>
         <div class="row">
         	<div class="col-md-4">
         		
@@ -242,12 +324,15 @@
         	</div>
 
         </div>
+
+    </div>
 
 
     </main>
 
 
-
+    <br>
+    <br>
 
     <footer>
         <% include ./partials/footer %>
