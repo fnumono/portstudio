@@ -7,7 +7,8 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var carreers = require('./routes/carreer');
+var careers = require('./routes/career');
+var pram = require('./routes/pramono');
 
 var app = express();
 
@@ -27,7 +28,13 @@ app.use(express.static(path.join(__dirname, 'public/images')));
 
 app.use('/', routes);
 app.use('/users', users);
-app.use('/carreer', carreers);
+app.use('/career', careers);
+// app.use('/resume/pramono',pram);
+
+app.get('/pramono/resume', function(req, res){
+  var file = __dirname + '/public/resume/pramono_resume.pdf';
+  res.download(file); // Set disposition and send it.
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
